@@ -33,7 +33,6 @@ function HomeScreen() {
 
   return (
     <div>
-      <AddProductForm />
       <h1>Produkty</h1>
       <div className="filters">
         <input

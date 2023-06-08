@@ -4,6 +4,7 @@ import HomeScreen from './HomeScreen';
 import ProductScreen from './ProductScreen';
 import Cart from './Cart';
 import { CartProvider } from './CartContext';
+import AddProductPage from './AddProductPage';
 
 function Header() {
   return (
@@ -56,6 +57,7 @@ function App() {
                 path="/produkt/:klucz"
                 element={<ProductScreen addToCart={addToCart} />}
               />
+              <Route exact path="/dodaj-produkt" component={AddProductPage} />
               <Route path="/koszyk" element={<Cart />} />
             </Routes>
           </main>
